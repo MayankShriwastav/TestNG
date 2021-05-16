@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Feature">
+	<parameter name="URL" value="www.google.com"></parameter>
+	
+	 <test name="Banks">
+		<parameter name="uName" value="Mayank"></parameter>
+		<parameter name="pwd" value="123456"></parameter>
+		<classes>
+			<class name="learnParameterizationAndDataProvider.SbiBank" />
+			<class name="learnParameterizationAndDataProvider.IciciBank" />
+			<class name="learnParameterizationAndDataProvider.HdfcBank" />
+		</classes>
+	</test>
+
+	<test name="Social Media">
+		<classes>
+			<class name="learnParameterizationAndDataProvider.Facebook" />
+		</classes>
+	</test>
+</suite> 

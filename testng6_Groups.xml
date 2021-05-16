@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Days">
+	<test name="weekdays">
+	   <groups>
+		 <run>
+		    <include name ="Smoke" /> 
+		    <!-- <exclude name ="Smoke" /> -->
+		 </run>
+	   </groups>
+	   
+	<classes>
+		<class name="learnGroups.Monday" />
+		<class name="learnGroups.Tuesday" />
+		<class name="learnGroups.Wednesday" />
+		<class name="learnGroups.Thrusday" />
+		<class name="learnGroups.Friday" />			
+	</classes>
+	
+	</test>
+</suite> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Feature" parallel ="tests" thread-count="2">
+
+	<listeners>
+	<listener class-name="learnListeners.Listeners"></listener>
+	</listeners>
+
+	<!-- <test name="Banks" parallel ="classes" thread-count="2"> -->
+	 <test name="Banks">
+		<classes>
+			<class name="learnListeners.SbiBank" />
+			<class name="learnListeners.IciciBank" />
+			<!--<class name="learnListeners.HdfcBank" /> -->
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan">
+	<test name="Personal Loan">
+		<classes>
+			<class name="learn.Day1" />
+			<class name="learn.Day2" />
+		</classes>
+	</test>
+
+	<test name="Car Loan">
+		<classes>
+			<class name="learn.Day3" />
+		</classes>
+	</test>
+
+	<test name="Home Loan">
+		<classes>
+			<class name="learn.Day4">
+				<methods>
+					<exclude name="apiLoginHomeLoan" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Marriage Loan">
+		<classes>
+			<class name="learn.Marriage">
+				<methods>
+					<!-- <include name="marriageLoan2" /> -->
+					<include name="marriage.*" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 
